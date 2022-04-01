@@ -1,0 +1,349 @@
+
+	      BINARY SEARCH
+low = 0;
+high = n - 1;
+mid = (low+high)/2;
+while (low <= high) {
+if(array[mid] < key)
+low = mid + 1;
+else if (array[mid] == key) {
+printf("%d found at location %d.n", key, mid+1);
+break;
+}
+else
+high = mid - 1;
+mid = (low + high)/2;
+
+
+
+
+
+		LINEAR SEARCH
+ for(i=0;i<n;++i)
+        if(a[i]==x)
+            break;
+     
+    if(i<n)
+        printf("Element found at index %d",i);
+    else
+        printf("Element not found");
+  
+
+
+		JUMP SEARCH
+while(array[end] <= key && end < size) {
+      start = end;
+      end += sqrt(size);
+      if(end > size - 1)
+         end = size; 
+   }
+
+   for(int i = start; i<end; i++) { 
+      if(array[i] == key)
+
+
+
+
+
+		Quick sorting
+
+int temp = *x; 
+*x = *y; 
+*y = temp; 
+}   
+
+int partition (int arr[], int lowIndex, int highIndex) 
+{ 
+int pivotElement = arr[highIndex];
+int i = (lowIndex - 1); 
+for (int j = lowIndex; j <= highIndex- 1; j++) 
+{ 
+if (arr[j] <= pivotElement) 
+{ 
+i++; 
+swapElements(&arr[i], &arr[j]); 
+
+
+
+
+		Bubble sorting
+
+int temp = *a; 
+*a = *b; 
+*b = temp; 
+}  
+// bubble sort function
+void bubbleSort(int array[], int n) 
+{ 
+int i, j; 
+for (i = 0; i < n-1; i++)       
+for (j = 0; j < n-i-1; j++) if (array[j] > array[j+1]) 
+swap(&array[j], &array[j+1]);
+
+
+
+
+			Merge
+
+for (i = 0; i < n1; i++) 
+L[i] = arr[l + i]; 
+for (j = 0; j < n2; j++) 
+R[j] = arr[m + 1+ j]; 
+i = 0; 
+j = 0; 
+k = l; 
+while (i < n1 && j < n2) 
+{ 
+if (L[i] <= R[j]) 
+{ 
+arr[k] = L[i]; 
+i++; 
+} 
+else
+{ 
+arr[k] = R[j]; 
+j++; 
+} 
+k++; 
+} 
+while (i < n1) 
+{ 
+arr[k] = L[i]; 
+i++; 
+k++; 
+} 
+while (j < n2) 
+{ 
+arr[k] = R[j]; 
+j++; 
+k++; 
+
+
+
+		Insertion
+
+for (i = 1; i < n; i++) { 
+element = array[i]; 
+j = i - 1; 
+while (j >= 0 && array[j] > element)
+ { 
+array[j + 1] = array[j]; 
+j = j - 1; 
+} 
+array[j + 1] = element; 
+
+
+
+		Selection
+
+for (i = 0; i < n-1; i++) 
+{
+min_element = i; 
+for (j = i+1; j < n; j++) 
+if (array[j] < array[min_element]) 
+min_element = j; 
+swap(&array[min_element], &array[i]); 
+} 
+
+
+		Heap
+
+j=2*i;&nbsp; &nbsp;
+if(j+1<=Number && Heap_of_Numbers[j+1] > Heap_of_Numbers[j])
+j=j+1;
+if( Heap_of_Numbers[j] < Heap_of_Numbers[i])
+Reference=0;
+else
+{
+copy=Heap_of_Numbers[i];
+Heap_of_Numbers[i]=Heap_of_Numbers[j];
+Heap_of_Numbers[j]=copy;
+i=j;
+}
+
+
+
+
+
+		fibonncci
+ for(i=2;i<number;++i)//loop starts from 2 because 0 and 1 are already printed    
+ {    
+  n3=n1+n2;    
+  printf(" %d",n3);    
+  n1=n2;    
+  n2=n3;    
+
+
+
+
+		factorial
+if (n == 0)  
+    return 1;  
+  else  
+    return(n * factorial(n-1));  
+
+
+
+		Array
+
+for ( i = 0; i < 10; i++ ) 
+{
+      n[ i ] = i + 100;
+   }   
+   for (j = 0; j < 10; j++ ) 
+{
+      printf("Element[%d] = %d\n", j, n[j] );
+   }
+
+
+
+		Listed list
+
+ struct node *temp,*ptr;
+ temp=(struct node *)malloc(sizeof(struct node));
+ if(temp==NULL)
+
+
+
+		Palindrome
+
+while(n>0)    
+{    
+r=n%10;    
+sum=(sum*10)+r;    
+n=n/10;    
+}    
+
+
+		Prime number
+
+for(i=2;i<=m;i++)    
+{    
+if(n%i==0)    
+{    
+printf("Number is not prime");    
+flag=1;    
+break;    
+}    
+}    
+
+
+		Polymorphism
+
+#include <iostream>    
+using namespace std;    
+class Animal {    
+    public:    
+void eat(){      
+cout<<"Eating...";      
+    }        
+};     
+class Dog: public Animal      
+{      
+ public:    
+ void eat()      
+    {           cout<<"Eating bread...";      
+    }      
+};    
+int main(void) {    
+   Dog d = Dog();      
+   d.eat();    
+   return 0;    
+}    
+
+
+
+
+		Encapsulation
+
+#include <iostream>
+using namespace std;
+class EncapsulationDemo {
+   private:
+   int length, breath, height;
+   public:
+   void setValues(int l, int b,int h) {
+      length = l;
+      breath = b;
+      height = h;
+   }
+   void calcVolume() {
+      cout<<"Length = " << length << endl;
+      cout<<"Breath = " << breath << endl;
+      cout<<"Height = " << height << endl;
+      cout<<"Volume = " << length*breath*height << endl;
+   }
+};
+int main() {
+   EncapsulationDemo obj;
+   obj.setValues(5, 3, 2);
+   obj.calcVolume();
+   return 0;
+}
+
+
+		Inheritance
+#include <iostream>
+ 
+using namespace std;
+
+
+class Shape {
+   public:
+      void setWidth(int w) {
+         width = w;
+      }
+      void setHeight(int h) {
+         height = h;
+      }
+      
+   protected:
+      int width;
+      int height;
+};
+
+
+class Rectangle: public Shape {
+   public:
+      int getArea() { 
+         return (width * height); 
+      }
+};
+
+
+
+		Abtraction
+#include <iostream>
+using namespace std;
+class Abstraction {
+   private:
+   int length, breadth;
+   public:
+   void setValues(int l, int b) {
+      length = l;
+      breadth = b;
+   }
+   void calcArea() {
+      cout<<"Length = " << length << endl;
+      cout<<"Breadth = " << breadth << endl;
+      cout<<"Area = " << length*breadth << endl;
+   }
+};
+int main() {
+   Abstraction obj;
+   obj.setValues(5, 20);
+   obj.calcArea();
+   return 0;
+}
+
+int main(void) {
+   Rectangle Rect;
+ 
+   Rect.setWidth(5);
+   Rect.setHeight(7);
+
+   // Print the area of the object.
+   cout << "Total area: " << Rect.getArea() << endl;
+
+   return 0;
+}
